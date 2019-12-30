@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link href="ui.css" rel="stylesheet" media="all">
+    <script>
+    	
+    	function SetInfo(id, state) {
+	    	var element = document.getElementById(id); 
+
+	    	if (state == "on") {
+	    		element.textContent="ON";
+	    	}
+	    	if (state == "off") {
+	    		element.textContent="OFF";
+	    	}
+    	}
+    	function SetSpeedometer(id, value) {
+	    	var element = document.getElementById(id); 
+	    	if (value == -1){
+	    		element.textContent=0
+	    	}else{
+	    		element.textContent=value
+	    	}
+	    	
+    	}
+    </script>
+  </head>
+  <body>
+<div id="car-ui">
+	<div class="vu-box">
+		<p><img src="radio.png"> Radio: <b id="vu-radio">OFF</b></p>
+	</div>
+	<div class="vu-box">
+		<p><img src="lightning.png"> Light: <b id="vu-lightning">OFF</b></p>
+	</div>
+	<div class="vu-box">
+		<p><img src="seatbelt.png"> Seatbelt: <b id="vu-seatbelt">OFF</b></p>
+	</div>
+	<div class="vu-box">
+		<p><img src="engine.png"> Engine: <b id="vu-engine">OFF</b></p>
+	</div>
+	<div class="vu-box">
+		<p><img src="speedometer.png"> <span id="vu-speedometer">0</span> <span id="name">KM/H</span></p>
+	</div>
+</div>
+  </body>
+</html>

@@ -1,0 +1,44 @@
+@import url('http://asset/zombierp/splashscreen/Quicksand-Regular.ttf');
+* {
+  color: #fff;
+  cursor: default;
+  font-family: 'Quicksand', sans-serif;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+body {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+#car-ui{
+    position: fixed;
+    right: 0;
+    bottom: 15px;
+    width: 14em;
+}
+.vu-box {
+    text-align: center;
+    font-weight: 800;
+    padding: 10px;
+    border-top-left-radius: 50em;
+    border-bottom-left-radius: 50em;
+    border-left: 5px solid #252525;
+    background: #353535!important;
+    border: 0.5px solid #252525;
+}
+.vu-box p img{
+    width: 9%;
+    float: left;
+}
+#vu-lightning{
+}
+#vu-seatbelt{
+}
+#vu-engine{
+}
+#vu-speedometer{
+}

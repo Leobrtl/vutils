@@ -1,0 +1,55 @@
+body {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+}
+
+
+#seatbelt{
+    position: fixed;
+    bottom: 5em;
+    right: 10em;
+    text-align: right;
+}
+#seatbelt .logo{
+  width: 15%;
+  animation: loader 0.9s infinite ease-in;
+}
+#engine{
+    position: fixed;
+    bottom: 5em;
+    right: 5em;
+    text-align: right;
+}
+#engine .logo{
+  width: 15%;
+  animation: loader 0.9s infinite ease-in;
+}
+
+
+
+
+/* Animation du chargement */
+@keyframes loader {
+  0% {
+    opacity: 0.2;
+  }
+  
+  25% {
+    opacity: 0.4;
+  }
+  
+  50% {
+    opacity: 0.6;
+  }
+  
+  75% {
+    opacity: 0.8;
+  }
+  
+  100% {
+    opacity: 1;
+  }
+}
